@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+ul, 
+ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ---Header--- */
+
+header{
+    background-color: #141414;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    border-bottom: solid #111111 2px;
+    
+    display: flex;
+    position: sticky;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.links{
+    color: white;
+}
+
+nav{
+    width: 70%;
+}
+
+header ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* ---Formulario--- */
+
+.titulo-formulario{
+    display: flex;
+    justify-content: center;
+    padding: 16px 16px;
+    color: white;
+    font-size: 36px;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-left: 16px;
+    align-content: center;
+}
+
+.titulo-recibir_noticias{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding-bottom: 8px;
+}
+
+.botones{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+
+.contacto-label{
+    font-size: 24px;
+    color: white;
+}
+
+/* ---Body--- */
+
+/* body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../assets/img/lostarkfondo.jpg);
+    background-size: cover;
+} */
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #03183F;
+    background-size: cover;
+    color: white;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+/* ---Index--- */
+
+.main-index{
+    padding: 10px 10px;
+    margin-left: 10px;
+}
+
+.main-titulo{
+    display: flex;
+    padding-bottom: 16px;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.texto-quienes{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 1fr;
+    font-size: 1.3rem;
+    justify-content: center;
+}
+
+.titulo-creador{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: titulocreador;
+}
+
+.titulo-destacado{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: titulodestacado;
+}
+
+.creadores-contenido{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas: 
+    "titulocreador titulodestacado"
+    "creador1 destacado1"
+    "creador2 destacado2";
+    justify-content: center;
+    padding-top: 16px;
+}
+
+.creadores-uno{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 12px;
+    grid-area: creador1;
+}
+
+.creadores-dos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 12px;
+    grid-area: creador2;
+}
+
+.creador{
+    font-size: 24px;
+}
+
+.destacado-uno{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 12px;
+    grid-area: destacado1;
+}
+
+.destacado-dos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 12px;
+    grid-area: destacado2;
+}
+
+.destacado{
+    font-size: 18px;
+}
+
+
+.link-logo{
+    width: 40px;
+    height: 40px;
+}
+
+/* ---Footer--- */
+
+.global-footer{
+    background-color: #141414;
+    border-top: solid #111111 2px;
+}
+
+.titulo-footer{
+    padding: 8px;
+    font-size: 24px;
+}
+
+footer li{
+    font-size: 16px;
+    padding-top: 8px;
+    margin-left: 40px;
+}

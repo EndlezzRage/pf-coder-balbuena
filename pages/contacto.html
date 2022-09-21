@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <body>
+
+        <header>
+            <h1><a href="../index.html" class="links">Minilostarkwiki.com</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="../pages/mundo.html" class="links">El mundo del Arkesia</a></li>
+                    <li><a href="../pages/contenido.html" class="links">Contenido dentro del juego</a></li>
+                    <li><a href="../pages/personajes.html" class="links">Personajes</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <h2 class="titulo-formulario">Formulario de contacto</h2>
+        <form action="" class="contacto">
+            <label for="nombre-usuario" class="contacto-label">Nombre y apellido</label>
+            <input type="text" id="nombre-usuario" placeholder="Ej: Juan Roberto Martinez" required>
+
+            <label for="email" class="contacto-label">Email</label>
+            <input type="email" id="email" placeholder="Ej: jrmartinez@hotmail.com" required>
+
+            <label for="motivo" class="contacto-label">Motivo de tu contacto</label>
+            <textarea name="motivo" id="motivo" cols="5" rows="10"></textarea>
+
+            <div>
+                <label for="">¿Aceptas nuestros terminos y condiciones?</label>
+                <input type="checkbox" value="acepta-terminos">
+            </div>
+
+            <div class="recibir-noticias">
+                <span for="" class="titulo-recibir_noticias">¿Queres recibir noticias?</span>
+                <div class="botones">
+                    <div class="boton-si">
+                        <label for="">Si</label>
+                        <input type="radio" name="noticias" value="noticias-si">
+                    </div>
+                    <div class="boton-no">
+                        <label for="">No</label>
+                        <input type="radio" name="noticias" value="noticias-no">
+                    </div>
+                </div>
+            </div>
+
+            <input type="submit" value="Enviar formulario">
+
+        </form>
+
+    </body>
+
+</html>
