@@ -1,243 +1,219 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow: auto;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: auto;
 }
 
-ul, 
-ol{
-    list-style: none;
+ul,
+ol {
+  list-style: none;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-/* ---Header--- */
-
-h1{
-    font-size: 2.5rem;
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #03183F;
+  background-size: cover;
+  color: white;
+  width: 100vw;
+  height: 100vh;
 }
 
-header{
-    background-color: #141414;
-    color: white;
-    padding: 10px;
-    font-size: 18px;
-    border-bottom: solid #111111 2px;
+.main-index {
+  padding: 10px 10px;
+  margin-left: 10px;
 }
 
-.links{
-    color: white;
+.main-titulo {
+  display: flex;
+  padding-bottom: 16px;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 2.5rem;
 }
 
-header ul{
-    display: flex;
-    justify-content: space-around;
-} 
-
-/* ---Formulario--- */
-
-.titulo-formulario{
-    display: flex;
-    justify-content: center;
-    padding: 16px 16px;
-    color: white;
-    font-size: 36px;
+.titulo-creador {
+  padding-right: 10px;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: titulocreador;
 }
 
-.contacto{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding-left: 16px;
-    align-content: center;
+.titulo-destacado {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: titulodestacado;
 }
 
-.titulo-recibir_noticias{
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    padding-bottom: 8px;
+.creadores-contenido {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-areas: "titulocreador titulodestacado" "creador1 destacado1" "creador2 destacado2";
+  justify-content: center;
+  padding-top: 16px;
 }
 
-.botones{
-    display: flex;
-    align-items: baseline;
-    justify-content: space-evenly;
+.creadores-uno {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 12px;
+  grid-area: creador1;
 }
 
-.contacto-label{
-    font-size: 24px;
-    color: white;
+.creadores-dos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 12px;
+  grid-area: creador2;
 }
 
-.button{
-    background-color: rgb(30, 128, 255);
-    padding: 15px, 10px;
-    border-radius: 10px;
-    font-size: 2rem;
-
-    transition-property: all;
-    transition-duration: 500ms;
+.creador {
+  font-size: 24px;
 }
 
-.button:hover{
-    color: rgb(255, 30, 30);
-    background-color: rgb(0, 0, 0);
-    border: 2px solid dodgerblue;
-    }
-
-.padding-btn{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 15px;
+.destacado-uno {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 12px;
+  grid-area: destacado1;
 }
 
-/* ---Body--- */
-
-/* body{
-    font-family: 'Roboto', sans-serif;
-    background-image: url(../assets/img/lostarkfondo.jpg);
-    background-size: cover;
-} */
-
-body{
-    font-family: 'Roboto', sans-serif;
-    background-color: #03183F;
-    background-size: cover;
-    color: white;
-
-    width: 100vw;
-    height: 100vh;
+.destacado-dos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 12px;
+  grid-area: destacado2;
 }
 
-/* ---Index--- */
-
-.main-index{
-    padding: 10px 10px;
-    margin-left: 10px;
+.destacado {
+  font-size: 18px;
 }
 
-.main-titulo{
-    display: flex;
-    padding-bottom: 16px;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 2.5rem;
+.link-logo {
+  width: 40px;
+  height: 40px;
 }
 
-/* .texto-quienes{
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: 1fr;
-    font-size: 1.3rem;
-    justify-content: center;
-} */
-
-.titulo-creador{
-    padding-right: 10px;
-    font-size: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: titulocreador;
+.tab-title {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
 }
 
-.titulo-destacado{
-    font-size: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: titulodestacado;
+.titulo-formulario {
+  display: flex;
+  justify-content: center;
+  padding: 16px 16px;
+  color: white;
+  font-size: 36px;
 }
 
-.creadores-contenido{
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-areas: 
-    "titulocreador titulodestacado"
-    "creador1 destacado1"
-    "creador2 destacado2";
-    justify-content: center;
-    padding-top: 16px;
+.contacto {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-left: 16px;
+  align-content: center;
 }
 
-.creadores-uno{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-top: 12px;
-    grid-area: creador1;
+.titulo-recibir_noticias {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding-bottom: 8px;
 }
 
-.creadores-dos{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-top: 12px;
-    grid-area: creador2;
+.botones {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
 }
 
-.creador{
-    font-size: 24px;
+.contacto-label {
+  font-size: 24px;
+  color: white;
 }
 
-.destacado-uno{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-top: 12px;
-    grid-area: destacado1;
+h1 {
+  font-size: 2.5rem;
 }
 
-.destacado-dos{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-top: 12px;
-    grid-area: destacado2;
+header {
+  background-color: #141414;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  border-bottom: solid #111111 2px;
 }
 
-.destacado{
-    font-size: 18px;
+.links {
+  color: white;
 }
 
-
-.link-logo{
-    width: 40px;
-    height: 40px;
+header ul {
+  display: flex;
+  justify-content: space-around;
 }
 
-/* ---Footer--- */
-
-.global-footer{
-    background-color: #141414;
-    border-top: solid #111111 2px;
+.global-footer {
+  background-color: #141414;
+  border-top: solid #111111 2px;
 }
 
-.titulo-footer{
-    padding: 8px;
-    font-size: 24px;
+.titulo-footer {
+  padding: 8px;
+  font-size: 24px;
 }
 
-footer li{
-    font-size: 16px;
-    padding-top: 8px;
-    margin-left: 40px;
+footer li {
+  font-size: 16px;
+  padding-top: 8px;
+  margin-left: 40px;
 }
 
-/* ----------- Contenido ------------- */
-
-.tab-title{
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
+.botones {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
 }
+
+.button {
+  background-color: rgb(30, 128, 255);
+  padding: 15px, 10px;
+  border-radius: 10px;
+  font-size: 2rem;
+  transition-property: all;
+  transition-duration: 500ms;
+}
+
+.button:hover {
+  color: rgb(255, 30, 30);
+  background-color: rgb(0, 0, 0);
+  border: 2px solid dodgerblue;
+}
+
+.padding-btn {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
+/*# sourceMappingURL=styles.css.map */

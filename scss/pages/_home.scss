@@ -1,0 +1,107 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #03183F;
+    background-size: cover;
+    color: white;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-index{
+    padding: 10px 10px;
+    margin-left: 10px;
+}
+
+.main-titulo{
+    display: flex;
+    padding-bottom: 16px;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.titulo-creador{
+    padding-right: 10px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: titulocreador;
+}
+
+.titulo-destacado{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: titulodestacado;
+}
+
+.creadores-contenido{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas: 
+    "titulocreador titulodestacado"
+    "creador1 destacado1"
+    "creador2 destacado2";
+    justify-content: center;
+    padding-top: 16px;
+}
+
+.creadores-uno{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 12px;
+    grid-area: creador1;
+}
+
+.creadores-dos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 12px;
+    grid-area: creador2;
+}
+
+.creador{
+    font-size: 24px;
+}
+
+.destacado-uno{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 12px;
+    grid-area: destacado1;
+}
+
+.destacado-dos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 12px;
+    grid-area: destacado2;
+}
+
+.destacado{
+    font-size: 18px;
+}
+
+
+.link-logo{
+    width: 40px;
+    height: 40px;
+}
+
+.tab-title{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
