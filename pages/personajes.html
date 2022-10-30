@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,21 +17,149 @@
 <body>
 
     <header>
-        <h1><a href="../index.html" class="links">Minilostarkwiki</a></h1>
-        <nav>
-            <ul>
-                <li><a href="../pages/mundo.html" class="links">El mundo del Arkesia</a></li>
-                <li><a href="../pages/contenido.html" class="links">Contenido dentro del juego</a></li>
-                <li class="links">Personajes</li>
-            </ul>
+        <nav class="navbar navbar-expand-md">
+            <h1><a class="links text-white" href="../index.html">Minilostarkwiki</a></h1>
+            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="links nav-link text-white" href="../pages/mundo.html">El mundo de Arkesia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="links nav-link text-white" href="../pages/contenido.html">Contenido en del juego</a>
+                    </li>
+                    <li class="nav-item">
+                    <li class="links nav-link text-white">Personajes</li>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <main>
-        <h2>Personajes</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus nam, nisi vitae assumenda minima explicabo,
-            fugit quisquam dolores amet autem sed cum? Deserunt voluptatum, aliquam porro magnam distinctio atque odit!
-        </p>
+        <h2 class="p-2">Personajes</h2>
+        <p class="p-2">En lost ark nos encontramos con muchisimas clases que cumplen diferentes funciones y hay una gran
+            variedad de
+            ellas entre las que puedes elegir. Cada clase se divide en diferentes sub-clases o como son llamadas aquí,
+            clases avanzadas.</p>
+        <p class="p-2">Iremos clase por clase, viendo las clases avanzadas que tiene cada una.</p>
+        <p class="p-2">Se dividen de la siguiente manera:</p>
+
+        <h2 class="tab-title">Guerrero.</h2>
+        <div class="row">
+            <figure class="figure col-3">
+                <img src="../assets/img/Berserker.jpg" class="figure-img img-fluid rounded"
+                    alt="Berserker del Lost ark">
+                <figcaption class="figure-caption d-flex justify-content-center text-white">Berserker.</figcaption>
+            </figure>
+            <figure class="figure col-3">
+                <img src="../assets/img/Paladin.jpg" class="figure-img img-fluid rounded" alt="Paladin del Lost ark">
+                <figcaption class="figure-caption d-flex justify-content-center text-white">Paladín.</figcaption>
+            </figure>
+            <figure class="figure col-3">
+                <img src="../assets/img/Gunlancer.jpg" class="figure-img img-fluid rounded" alt="Lancero del Lost ark">
+                <figcaption class="figure-caption d-flex justify-content-center text-white">Gunlancer.</figcaption>
+            </figure>
+            <figure class="figure col-3">
+                <img src="../assets/img/Destroyer.jpg" class="figure-img img-fluid rounded"
+                    alt="Destructor del Lost ark">
+                <figcaption class="figure-caption d-flex justify-content-center text-white">Destroyer.</figcaption>
+            </figure>
+        </div>
+        <hr>
+
+        <h2 class="tab-title">Artistas Marciales.</h2>
+        <div class="row">
+            <figure class="figure col-4">
+                <img src="../assets/img/Scrapper.jpg" class="figure-img img-fluid rounded"
+                    alt="Chatarrera del Lost ark">
+                <figcaption class="figure-caption d-flex justify-content-center text-white">Scrapper.</figcaption>
+            </figure>
+            <figure class="figure col-4">
+                <img src="../assets/img/Wardrancer.jpg" class="figure-img img-fluid rounded"
+                    alt="Bailarina guerrera del Lost ark">
+                <figcaption class="figure-caption d-flex justify-content-center text-white">Wardancer.</figcaption>
+            </figure>
+            <figure class="figure col-4">
+                <img src="../assets/img/Soulfist.jpg" class="figure-img img-fluid rounded"
+                    alt="Puño de alma del Lost ark">
+                <figcaption class="figure-caption d-flex justify-content-center text-white">Soulfist.</figcaption>
+            </figure>
+            <figure class="figure col-6">
+                <img src="../assets/img/Glaivier.jpg" class="figure-img img-fluid rounded" alt="Gujista del Lost ark">
+                <figcaption class="figure-caption d-inline-block text-white">Glaivier.</figcaption>
+            </figure>
+            <figure class="figure col-6">
+                <img src="../assets/img/Striker.jpg" class="figure-img img-fluid rounded" alt="Striker del Lost ark">
+                <figcaption class="figure-caption d-inline-block text-white">Striker.</figcaption>
+            </figure>
+        </div>
+        <hr>
+
+        <h2 class="tab-title">Artilleros.</h2>
+        <div class="row">
+            <figure class="figure col-4">
+                <img src="../assets/img/Artillerist.jpg" class="figure-img img-fluid rounded"
+                    alt="Artillero del Lost ark">
+                <figcaption class="figure-caption d-flex justify-content-center text-white">Artillerist.</figcaption>
+            </figure>
+            <figure class="figure col-4">
+                <img src="../assets/img/Sharpshooter.jpg" class="figure-img img-fluid rounded" alt=" del Lost ark">
+                <figcaption class="figure-caption d-flex justify-content-center text-white">Sharpshooter.</figcaption>
+            </figure>
+            <figure class="figure col-4">
+                <img src="../assets/img/Gunslinger.jpg" class="figure-img img-fluid rounded"
+                    alt="Pistolera del Lost ark">
+                <figcaption class="figure-caption d-flex justify-content-center text-white">Gunslinger.</figcaption>
+            </figure>
+            <figure class="figure col-6">
+                <img src="../assets/img/Machinist.jpg" class="figure-img img-fluid rounded"
+                    alt="Maquinista del Lost ark">
+                <figcaption class="figure-caption d-inline-block text-white">Machinist.</figcaption>
+            </figure>
+            <figure class="figure col-6">
+                <img src="../assets/img/Deadeye.jpg" class="figure-img img-fluid rounded" alt="Pistolero del Lost ark">
+                <figcaption class="figure-caption d-inline-block text-white">Deadeye.</figcaption>
+            </figure>
+        </div>
+        <hr>
+
+        <h2 class="tab-title">Magas.</h2>
+        <div class="row">
+            <figure class="figure col-4">
+                <img src="../assets/img/Bard.jpg" class="figure-img img-fluid rounded" alt="Bardo del Lost ark">
+                <figcaption class="figure-caption d-flex justify-content-center text-white">Bard.</figcaption>
+            </figure>
+            <figure class="figure col-4">
+                <img src="../assets/img/Sorceress.jpg" class="figure-img img-fluid rounded"
+                    alt="Hechicera del Lost ark">
+                <figcaption class="figure-caption d-flex justify-content-center text-white">Sorceress.</figcaption>
+            </figure>
+            <figure class="figure col-4">
+                <img src="../assets/img/Arcanist.png" class="figure-img img-fluid rounded" alt="Arcanista del Lost ark">
+                <figcaption class="figure-caption d-flex justify-content-center text-white">Arcanist.</figcaption>
+            </figure>
+        </div>
+        <hr>
+
+        <h2 class="tab-title">Magas.</h2>
+        <div class="row">
+            <figure class="figure col-6">
+                <img src="../assets/img/Deathblade.jpg" class="figure-img img-fluid rounded" alt="Espada letal del Lost ark">
+                <figcaption class="figure-caption text-white">Deathblade.</figcaption>
+            </figure>
+            <figure class="figure col-6">
+                <img src="../assets/img/Shadowhunter.jpg" class="figure-img img-fluid rounded"
+                    alt="Cazadora de demonios del Lost ark">
+                <figcaption class="figure-caption text-white">Shadowhunter.</figcaption>
+            </figure>
+        </div>
+        <hr>
+
     </main>
 
     <footer class="global-footer">
@@ -43,7 +172,9 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,21 +17,264 @@
 <body>
 
     <header>
-        <h1><a href="../index.html" class="links">Minilostarkwiki</a></h1>
-        <nav>
-            <ul>
-                <li><a href="../pages/mundo.html" class="links">El mundo del Arkesia</a></li>
-                <li class="links">Contenido dentro del juego</li>
-                <li><a href="../pages/personajes.html" class="links">Personajes</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-md">
+            <h1><a class="links text-white" href="../index.html">Minilostarkwiki</a></h1>
+            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="links nav-link text-white" href="../pages/mundo.html">El mundo de Arkesia</a>
+                    </li>
+                    <li class="nav-item">
+                    <li class="links nav-link text-white">Contenido en del juego</li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="links nav-link text-white" href="../pages/personajes.html">Personajes</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <main>
-        <h2>Contenido dentro del juego</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus nam, nisi vitae assumenda minima explicabo,
-            fugit quisquam dolores amet autem sed cum? Deserunt voluptatum, aliquam porro magnam distinctio atque odit!
-        </p>
+        <h2 class="p-2 mt-2 d-flex justify-content-center">Contenido dentro del juego</h2>
+        <hr>
+        <p class="p-2">El contenido del juego es variado, puede ser de forma individual o hasta 50 jugadores, y se
+            divide en
+            diferentes tipos. El contenido individual se divide en cosas como la busqueda de coleccionables, Chaos
+            Dungeons, Tower y Thronespire.</p>
+        <p class="p-2">Luego se encuentra el contenido grupal, que puede ser de 4 a 8 jugadores, como por ejemplo, las
+            Guardian
+            Dungeons, las Abyssal Dungeons, las Abyss Raid y las Legion Raids.</p>
+        <p class="p-2">En esta ocasión vamos a poner las guías de las dichas anteriormente Guardian Raids, que te van a
+            servir y ayudar de principio a fin en tu aventura.</p>
+
+        <div class="p-2 clearfix">
+            <h2 class="p-2 d-flex justify-content-center">Asalto de Guardianes</h2>
+            <p class="p-2">Estos son todos los guardianes disponibles en el juego, guías cortesia de maxrolls</p>
+            <hr>
+            <div class="guardian-raids">
+
+                <div class="tabs-body">
+
+                    <div class="tab-title pb-2">Raid Lvl 1</div>
+
+                    <div class="row">
+                        <div class="p-2 d-flex col-sm-6">
+                            <a href="https://maxroll.gg/lost-ark/guardian-raids/urnil">
+                                <img src="../assets/img/Urnil.jpg" class="w-100 h-95" alt="Imagen del asalto de guardianes Ur'nill">
+                                <div class="title">
+                                    <h2 class="d-flex justify-content-center">Ur'nil</h2>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="d-flex col-sm-6">
+                            <a href="https://maxroll.gg/lost-ark/guardian-raids/lumerus">
+                                <img src="../assets/img/Lumerus.jpg" class="w-100 h-95" alt="Imagen del asalto de guardianes Lumerus">
+                                <div class="title">
+                                    <h2 class="d-flex justify-content-center">Lumerus</h2>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="d-flex col-sm-6">
+                            <a href="https://maxroll.gg/lost-ark/guardian-raids/icy-legoros">
+                                <img src="../assets/img/Icy Legoros.jpg" class="w-100 h-95" alt="Imagen del asalto de guardianes Icy Legoros">
+                                <div class="title">
+                                    <h2 class="d-flex justify-content-center">Icy Legoros</h2>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="d-flex col-sm-6">
+                            <a href="https://maxroll.gg/lost-ark/guardian-raids/vertus">
+                                <img src="../assets/img/Vertus.jpg" class="w-100 h-95" alt="Imagen del asalto de guardianes Vertus">
+                                <div class="title">
+                                    <h2 class="d-flex justify-content-center">Vertus</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="tab-title pb-2">Raid Lvl 2</div>
+
+                    <div class="row">
+                        <div class="d-flex col-sm-6">
+                            <a href="https://maxroll.gg/lost-ark/guardian-raids/chromanium">
+                                <img src="../assets/img/Chromanium.jpg" class="w-100 h-95" alt="Imagen del asalto de guardianes Chromanium">
+                                <div class="title">
+                                    <h2 class="d-flex justify-content-center">Chromanium</h2>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="d-flex col-sm-6">
+                            <a href="https://maxroll.gg/lost-ark/guardian-raids/nacrasena">
+                                <img src="../assets/img/Nacrasena.jpg" class="w-100 h-95" alt="Imagen del asalto de guardianes Nacrasena">
+                                <div class="title">
+                                    <h2 class="d-flex justify-content-center">Nacrasena</h2>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="d-flex col-sm-6">
+                            <a href="https://maxroll.gg/lost-ark/guardian-raids/flame-fox-yoho">
+                                <img src="../assets/img/Flame Fox Yoho.jpg" class="w-100 h-95" alt="Imagen del asalto de guardianes de Flame Fox Yoho">
+                                <div class="title">
+                                    <h2 class="d-flex justify-content-center">Flame Fox Yoho</h2>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="d-flex col-sm-6">
+                            <a href="https://maxroll.gg/lost-ark/guardian-raids/tytalos">
+                                <img src="../assets/img/Titalos.jpg" class="w-100 h-95" alt="Imagen del asalto de guardianes Tytalos">
+                                <div class="title">
+                                    <h2 class="d-flex justify-content-center">Tytalos</h2>
+                                </div>
+                            </a>
+                        </div>
+                        <hr>
+                    </div>
+
+                    <div class="tab-title pb-2">Raid Lvl 3</div>
+
+                    <div class="row">
+                        <div class="d-flex col-sm-6">
+                            <a href="https://maxroll.gg/lost-ark/guardian-raids/dark-legoros">
+                                <img src="../assets/img/Dark Legoros.jpg" class="w-100 h-95" alt="Imagen del asalto de guardianes Dark Legoros">
+                                <div class="title">
+                                    <h2 class="d-flex justify-content-center">Dark Legoros</h2>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="d-flex col-sm-6">
+                            <a href="https://maxroll.gg/lost-ark/guardian-raids/helgaia">
+                                <img src="../assets/img/Hellgaia.jpg" class="w-100 h-95" alt="Imagen del asalto de guardianes Helgaia">
+                                <div class="title">
+                                    <h2 class="d-flex justify-content-center">Helgaia</h2>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="d-flex col-sm-6">
+                            <a href="https://maxroll.gg/lost-ark/guardian-raids/calventus">
+                                <img src="../assets/img/Calventus.jpg" class="w-100 h-95" alt="Imagen del asalto de guardianes Calventus">
+                                <div class="title">
+                                    <h2 class="d-flex justify-content-center">Calventus</h2>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="d-flex col-sm-6">
+                            <a href="https://maxroll.gg/lost-ark/guardian-raids/achates">
+                                <img src="../assets/img/Achates.jpg" class="w-100 h-95" alt="Imagen del asalto de guardianes Achates">
+                                <div class="title">
+                                    <h2 class="d-flex justify-content-center">Achates</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="tab-title pb-2">Raid Lvl 4</div>
+
+                    <div class="row">
+                        <div class="d-flex col-sm-6">
+                            <a href="https://maxroll.gg/lost-ark/guardian-raids/frost-helgaia">
+                                <img src="../assets/img/Frost Hellgaia.jpg" class="w-100 h-95" alt="Imagen del asalto de guardianes Frost Helgaia">
+                                <div class="title">
+                                    <h2 class="d-flex justify-content-center">Frost Helgaia</h2>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="d-flex col-sm-6">
+                            <a href="https://maxroll.gg/lost-ark/guardian-raids/lava-chromanium">
+                                <img src="../assets/img/Lava Chromanium.jpg" class="w-100 h-95" alt="Imagen del asalto de guardianes de Lava Chromanium">
+                                <div class="title">
+                                    <h2 class="d-flex justify-content-center">Lava Chromanium</h2>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="d-flex col-sm-6">
+                            <a href="https://maxroll.gg/lost-ark/guardian-raids/levanos">
+                                <img src="../assets/img/Levanos.jpg" class="w-100 h-95" alt="Imagen del asalto de guardianes Levanos">
+                                <div class="title">
+                                    <h2 class="d-flex justify-content-center">Levanos</h2>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="d-flex col-sm-6">
+                            <a href="https://maxroll.gg/lost-ark/guardian-raids/Alberhastic">
+                                <img src="../assets/img/Alberhastic.jpg" class="w-100 h-95" alt="Imagen del asalto de guardianes Alberhastic">
+                                <div class="title">
+                                    <h2 class="d-flex justify-content-center">Alberhastic</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="tab-title pb-2">Raid Lvl 5</div>
+
+                    <div class="row">
+                        <div class="d-flex col-sm-6">
+                            <a href="https://maxroll.gg/lost-ark/guardian-raids/armored-nacrasena">
+                                <img src="../assets/img/Armored Nacrasena.jpg" class="w-100 h-95" alt="Imagen del asalto de guardianes Armored Nacrasena">
+                                <div class="title">
+                                    <h2 class="d-flex justify-content-center">Armored Nacrasena</h2>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="d-flex col-sm-6">
+                            <a href="https://maxroll.gg/lost-ark/guardian-raids/igrexion">
+                                <img src="../assets/img/Igrexxion.jpg" class="w-100 h-95" alt="Imagen del asalto de guardianes Igrexxion">
+                                <div class="title">
+                                    <h2 class="d-flex justify-content-center">Igrexxion</h2>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="d-flex col-sm-6">
+                            <a href="https://maxroll.gg/lost-ark/guardian-raids/night-fox-yoho">
+                                <img src="../assets/img/Night Fox Yoho.jpg" class="w-100 h-95" alt="Imagen del asalto de guardianes del Night Fox Yoho">
+                                <div class="title">
+                                    <h2 class="d-flex justify-content-center">Night Fox Yoho</h2>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="d-flex col-sm-6">
+                            <a href="https://maxroll.gg/lost-ark/guardian-raids/velganos">
+                                <img src="../assets/img/Velganos.jpg" class="w-100 h-95" alt="Imagen del asalto de guardianes Velganos">
+                                <div class="title">
+                                    <h2 class="d-flex justify-content-center">Velganos</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="tab-title pb-2">Raid Lvl 6</div>
+
+                    <div class="row">
+                        <div class="d-flex col-sm-6">
+                            <a href="https://maxroll.gg/lost-ark/guardian-raids/deskaluda">
+                                <img src="../assets/img/Deskaluda.jpg" class="w-100 h-95" alt="Imagen del asalto de guardianes Deskaluda">
+                                <div class="title">
+                                    <h2 class="d-flex justify-content-center">Deskaluda</h2>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="d-flex col-sm-6">
+                            <a href="https://maxroll.gg/lost-ark/guardian-raids/kungelanium">
+                                <img src="../assets/img/Kungelanium.jpg" class="w-100 h-95" alt="Imagen del asalto de guardianes Kumgelanium">
+                                <div class="title">
+                                    <h2 class="d-flex justify-content-center">Kungelanium</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
     </main>
 
     <footer class="global-footer">
@@ -43,7 +287,9 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
